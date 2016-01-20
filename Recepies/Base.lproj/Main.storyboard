@@ -29,7 +29,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-Nv-6qO">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-Nv-6qO">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Ham Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlr-T6-xi3">
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="278"/>
         </scene>
-        <!--View Controller-->
+        <!--Create RecpiesVC-->
         <scene sceneID="sGT-Gp-GVq">
             <objects>
-                <viewController id="1Ch-bb-jos" sceneMemberID="viewController">
+                <viewController id="1Ch-bb-jos" customClass="CreateRecpiesVC" customModule="Recepies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4q1-2Y-AoW"/>
                         <viewControllerLayoutGuide type="bottom" id="jEW-JC-2vG"/>
@@ -124,8 +124,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8y-33-cUn">
                                 <rect key="frame" x="180" y="293" width="240" height="170"/>
                                 <state key="normal" title="+ Add Image">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImage:" destination="1Ch-bb-jos" eventType="touchUpInside" id="mGX-U4-f5d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjF-d6-hPp">
                                 <rect key="frame" x="235" y="512" width="131" height="30"/>
@@ -134,6 +137,9 @@
                                     <constraint firstAttribute="width" constant="131" id="TNQ-Wr-lms"/>
                                 </constraints>
                                 <state key="normal" title="Create Recepie"/>
+                                <connections>
+                                    <action selector="createRecipe:" destination="1Ch-bb-jos" eventType="touchUpInside" id="zRk-aM-nNa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,6 +163,12 @@
                             <constraint firstItem="u8y-33-cUn" firstAttribute="centerY" secondItem="Ndp-20-sfJ" secondAttribute="centerY" id="mId-m0-7gM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recipeImage" destination="Ndp-20-sfJ" id="ThL-vJ-75j"/>
+                        <outlet property="recipeIngredients" destination="3sw-mN-zdb" id="xdn-EO-mYX"/>
+                        <outlet property="recipeSteps" destination="w19-R4-rY2" id="Ibx-S8-f3f"/>
+                        <outlet property="recipeTitle" destination="hX9-wa-hge" id="l2f-rT-SPg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8D-Eh-Hgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

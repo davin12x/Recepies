@@ -16,6 +16,7 @@
 		0AC2CC6E1C50002F008673B7 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2CC6C1C50002F008673B7 /* Recipe+CoreDataProperties.swift */; };
 		0AC2CC6F1C50002F008673B7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2CC6D1C50002F008673B7 /* Recipe.swift */; };
 		0AC2CC711C5005D7008673B7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2CC701C5005D7008673B7 /* RecipeCell.swift */; };
+		0AC2CC731C5012B3008673B7 /* CreateRecpiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2CC721C5012B3008673B7 /* CreateRecpiesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0AC2CC6C1C50002F008673B7 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0AC2CC6D1C50002F008673B7 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 		0AC2CC701C5005D7008673B7 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		0AC2CC721C5012B3008673B7 /* CreateRecpiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecpiesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		0AC2CC531C4FF698008673B7 /* Recepies */ = {
 			isa = PBXGroup;
 			children = (
+				0AC2CC721C5012B3008673B7 /* CreateRecpiesVC.swift */,
 				0AC2CC561C4FF698008673B7 /* ViewController.swift */,
 				0AC2CC6B1C4FFFC9008673B7 /* Controller */,
 				0AC2CC6A1C4FFFC4008673B7 /* View */,
@@ -174,6 +177,7 @@
 			files = (
 				0AC2CC571C4FF698008673B7 /* ViewController.swift in Sources */,
 				0AC2CC6E1C50002F008673B7 /* Recipe+CoreDataProperties.swift in Sources */,
+				0AC2CC731C5012B3008673B7 /* CreateRecpiesVC.swift in Sources */,
 				0AC2CC551C4FF698008673B7 /* AppDelegate.swift in Sources */,
 				0AC2CC5D1C4FF698008673B7 /* Recepies.xcdatamodeld in Sources */,
 				0AC2CC6F1C50002F008673B7 /* Recipe.swift in Sources */,
